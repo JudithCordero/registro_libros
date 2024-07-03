@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro Biblioteca</title>
+<!--Links-->
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/sweetalert2.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Ingreso De Libros</h1>
+        <form name="forma" id="forma" action="" method="get" onsubmit="return validacion();">
+
+            <!--BOTON DE GUARDAR-->
+            <div id="row1">
+                <input class="boton_guardar" type="submit" value="Guardar">
+            </div>
+            
+            <!--INGRESO DE CODIGO-->
+            <div id="row">
+                <div class="col-25">
+                    <label for="codigo">Codigo: </label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="f_codigo" name="f_codigo" placeholder="Ingrese el codigo" maxlength="10">
+                </div>
+            </div>
+            
+            <!--INGRESO DE NOMBRE DEL LIBRO-->
+            <div id="row">
+                <div class="col-25">
+                    <label for="nombrel">Nombre del libro: </label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="f_nombrel" name="f_nombrel" placeholder="Ingrese nombre del libro">
+                </div>
+            </div>
+
+            <!--SELECION DE EDITORIAL-->
+            <div id="row">
+                <div class="col-25">
+                    <label for="editorial">Editorial:</label>
+                </div>
+                <div class="col-75">
+                    <select name="f_editorial" id="f_editorial">
+                        <option value="0">Seleccione:</option>
+                        <option value="1">Santillan</option>
+                        <option value="2">Pearson</option>
+                        <option value="3">Hachette</option>
+                        <option value="4">Penguin Random House</option>
+                        <option value="5">Grupo Planeta</option>
+                    </select>
+                </div>
+            </div>
+
+            <!--NOMBRE DEL AUTOR-->
+            <div id="row">
+                <div class="col-25">
+                    <label for="nombrea">Autor: </label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="f_nombrea" name="f_nombrea" placeholder="Ingrese el autor">
+                </div>
+            </div>
+
+            <!--FECHA DE EDICION-->
+            <div id="row">
+                <div class="col-25">
+                    <label for="edicion">Fecha Edicion: </label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="f_edicion" name="f_edicion" placeholder="dd/mm/aa">
+                </div>
+            </div>
+
+            <!--CANTIDAD-->
+            <div id="row">
+                <div class="col-25">
+                    <label for="cantidad">Cantidad: </label>
+                </div>
+                <div class="col-75">
+                    <input type="number" id="f_cantidad" name="f_cantidad" maxlength="10">
+                </div>
+            </div>
+
+            <!--FECHA SALIDA-->
+            <div id="row">
+                <div class="col-25">
+                    <label for="salida">Fecha Salida: </label>
+                </div>
+                <div class="col-75">
+                    <input type="date" id="f_salida" name="f_salida">
+                </div>
+            </div>
+
+        
+
+        
+
+        </form>
+        <!--BOTON DE GUARDAR-->
+        <div id="row2">
+            <input class="boton_cancelar" type="submit" value="Cancelar">
+        </div>
+
+    </div><!--end container-->
+    <!--SCRIPT-->
+    <script src="js/script.js"></script>
+    <script src="js/sweetalert2.all.min.js"></script>
+</body>
+</html>

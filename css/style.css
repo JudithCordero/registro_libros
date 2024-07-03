@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+   font-family: sans-serif;
+   /*background: linear-gradient(rgb(36, 219, 204));*/
+   background-color: rgba(206, 116, 187, 0.404);
+}
+
+h1{
+    text-align: center;
+}
+
+input[type="text"], 
+input[type="number"], 
+input[type="date"], 
+select{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+label{
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    font-weight: bold;
+}
+
+
+.container{
+    border-radius: 5px;
+    background-color: rgb(142, 224, 142);
+    padding-left: 100px;
+    padding-right: 100px;
+    position: relative;
+    top: 55px;
+    width: 95%;
+    margin:  5px auto;
+}
+
+.col-25{
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75{
+    float: left;
+    width: 90%;
+    margin-top: 2px;
+}
+
+#row1, #row2{
+    display: flex;
+    margin-bottom: 15px;
+    justify-content: right;
+}
+#row2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.boton_guardar, .boton_cancelar{
+    background-color: rgb(15, 219, 202);
+    color: black;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.boton_guardar:hover{
+    color: rgb(80, 85, 150);
+    background-color: #0c3564;
+}
+
+.boton_cancelar{
+    background-color: red;
+    color: white;
+}
+
+
+.boton_cancelar:hover{
+    color: rgb(80, 14, 14);
+    background-color: rgb(145, 47, 47);
+}
+
+@media screen and (max-width: 600px){/*smartphone*/
+    body{
+        font-family: sans-serif;
+        /*background: linear-gradient(rgb(36, 219, 204));*/
+        background-color: rgba(70, 197, 219, 0.87);
+     }
+ 
+     .col-25{
+        float: left;
+        width: 25%;
+        margin-top: 6px;
+    }
+    
+    .col-75{
+        float: left;
+        width: 90%;
+        margin-top: 2px;
+    }
+ 
+    label{
+        padding: 12px 12px 12px 0;
+        display: inline-block;
+        font-weight: bold;
+    }
+ 
+    .container{
+        padding: 10px;
+    }
+ 
+    p{
+        font-size:120%;
+    }
+ 
+    h1{
+        text-align: center;
+        font-size:190%;
+    }
+}
+ 
+@media screen and (min-width: 601px) and (max-width:768px){/*tablet*/
+    body{
+        font-family: sans-serif;
+        /*background: linear-gradient(rgb(36, 219, 204));*/
+        background-color: rgba(236, 219, 64, 0.808);
+     }
+ 
+    .container{
+        padding: 8px;
+    }
+   
+    .col-25{
+        float: left;
+        width: 25%;
+        margin-top: 6px;
+    }
+    
+    .col-75{
+        float: left;
+        width: 90%;
+        margin-top: 2px;
+    }
+ 
+    .boton_guardar, .boton_cancelar{
+        background-color: rgb(15, 219, 202);
+        color: black;
+        padding: 10px 20px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+   
+    .boton_guardar:hover{
+        color: rgb(80, 85, 150);
+        background-color: #0c3564;
+    }
+    
+    .boton_cancelar{
+        background-color: red;
+        color: white;
+    }
+}
